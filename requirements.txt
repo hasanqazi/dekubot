@@ -1,4 +1,0 @@
-discord
-youtube_dl
-discord.ext
-random
