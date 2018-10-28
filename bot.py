@@ -3,7 +3,6 @@ import youtube_dl
 from discord.ext import commands
 from random import randint
 import random
-from PIL import Image, ImageDraw, ImageFont
 
 TOKEN = 'MzY0NDk2NjE4NzIxOTAyNTky.DLVQ2g.4bdaRbygvmKy57jrG83fP-Ou_6o'
 
