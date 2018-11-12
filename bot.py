@@ -1,7 +1,6 @@
 import discord
 import youtube_dl
 from discord.ext import commands
-from random import randint
 import random
 
 TOKEN = 'MzY0NDk2NjE4NzIxOTAyNTky.DLVQ2g.4bdaRbygvmKy57jrG83fP-Ou_6o'
@@ -51,7 +50,7 @@ async def on_ready():
 
 @client.command(pass_context=True)
 async def roast(ctx, name):
-    insult = randint(0, (len(insults)-1))
+    insult = random.randint(0, (len(insults)-1))
     await client.say(name + ', ' + insults[insult])
 
 @client.command(pass_context=True)
@@ -64,8 +63,7 @@ async def mock(ctx, text):
 async def on_message_delete(message):
     author = message.author
     content = message.content
-    channel = message.channel
-    await client.send_message(channel, '{}: {}'.format(author, content))
+    await client.send_message(client.get_channel('500464557307985920'), '{}: {}'.format(author, content))
 
 @client.command(pass_context=True)
 async def greentext(ctx, text):
