@@ -3,7 +3,7 @@ import youtube_dl
 from discord.ext import commands
 import random
 
-TOKEN = 'MzY0NDk2NjE4NzIxOTAyNTky.DLVQ2g.4bdaRbygvmKy57jrG83fP-Ou_6o'
+TOKEN = ''
 
 client = commands.Bot(command_prefix = 'deku ')
 
